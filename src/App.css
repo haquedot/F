@@ -19,5 +19,6 @@
 
 .custom-btn:hover {
   transition: all .21s ease-in-out;
+  color: #fff;
   background-color: #1b8057;
 }
