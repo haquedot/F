@@ -1,4 +1,5 @@
 import CustomNavbar from './components/CustomNavbar'
+import HeroSection from './components/HeroSection'
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <>
       <CustomNavbar/>
+      <HeroSection/>
     </>
   )
 }
