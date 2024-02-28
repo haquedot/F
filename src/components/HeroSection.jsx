@@ -7,7 +7,7 @@ function HeroSection() {
     return (
         <>
             <Container fluid>
-                <Row>
+                <Row className='mb-4'>
                     <Col lg={7}>
                         <Card className='hero_card mb-4 mb-lg-0'>
                             <img src="images/hero-1.jpg" alt="" srcSet="" className='w-100' />
