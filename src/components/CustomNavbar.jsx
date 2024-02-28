@@ -12,7 +12,7 @@ function CustomNavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary border rounded m-3">
       <Container fluid>
-        <Navbar.Brand href="#"><img src="public/logo.png" alt="" srcset="" className='logo'/></Navbar.Brand>
+        <Navbar.Brand href="#"><img src="./public/logo.png" alt="" srcset="" className='logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
           id="offcanvasNavbar"
@@ -21,7 +21,7 @@ function CustomNavbar() {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">
-              <img src="/public/logo.png" alt="" srcset="" />
+              <img src="./public/logo.png" alt="" srcset=""  className='logo'/>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>

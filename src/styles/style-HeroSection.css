@@ -10,19 +10,39 @@
     top: 50%;
     padding: 0 80px;
 }
-.hero_card_content_2{
+
+.hero_card_content span {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .5px;
+    color: #fff;
+    background-color: #1b8057;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    padding: 3px 24px 3px 12px;
+    border-radius: 5px;
+    clip-path: polygon(50% 0, 100% 0, 100% 0, 95% 50%, 100% 100%, 100% 100%, 62% 100%, 0 100%, 0 0, 0 0);
+}
+
+.hero_card_content h1{
+    font-family: Pacifico;
+}
+
+.hero_card_content_2 {
     position: absolute;
     top: 50%;
     padding: 0 20px;
 }
 
-.hero_card_content_3{
+.hero_card_content_3 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0 20px;
 }
+
 .hero_card img {
     width: 100%;
     object-fit: cover;
@@ -34,7 +54,8 @@
 .hero_card img:hover {
     transform: scale3d(1.055, 1.065, 1);
 }
-.right_card{
+
+.right_card {
     display: flex;
     flex-direction: column;
     gap: 24px 24px;
