@@ -16,6 +16,7 @@ function HeroSection() {
                                 <h1>
                                     Farm on Hand
                                 </h1>
+                                <h5>Fresh from the Fields</h5>
                             </div>
                         </Card>
                     </Col>
