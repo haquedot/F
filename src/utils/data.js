@@ -38,6 +38,46 @@ export const product = [
         id: 7,
         imageId: "cauliflower_1",
         name: "Tomatoes",
+    },
+    {
+        id: 8,
+        imageId: "cauliflower_1",
+        name: "Tomatoes",
+    },
+    {
+        id: 9,
+        imageId: "cauliflower_1",
+        name: "Tomatoes",
+    },
+    {
+        id: 10,
+        imageId: "cauliflower_1",
+        name: "Tomatoes",
+    },
+    {
+        id: 11,
+        imageId: "cauliflower_1",
+        name: "Tomatoes",
+    },
+    {
+        id: 12,
+        imageId: "cauliflower_1",
+        name: "Tomatoes",
+    },
+    {
+        id: 13,
+        imageId: "cauliflower_1",
+        name: "Tomatoes",
+    },
+    {
+        id: 14,
+        imageId: "cauliflower_1",
+        name: "Tomatoes",
+    },
+    {
+        id: 15,
+        imageId: "cauliflower_1",
+        name: "Tomatoes",
     }
 
 ]
