@@ -1,5 +1,8 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { product } from '../utils/data';
+import { getImageUrl } from '../utils/utils';
+import { Container, Card } from 'react-bootstrap';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,28 +13,35 @@ import "../styles/style-Slider.css"
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-function Slider() {
+const Slider = () => {
   return (
     <>
-      <Swiper
-        slidesPerView={6}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam libero veritatis fuga temporibus sapiente nobis pariatur ratione. Porro odio officiis eos explicabo assumenda, illum hic? Dignissimos fuga similique magni saepe.</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+      <Container fluid>
+        <Swiper
+          slidesPerView={6}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper mb-3"
+        >
+          {product.map((product, index) => (
+            <SwiperSlide key={product.id}>
+              <Card>
+                <div className="d-block">
+                  <img src={getImageUrl(product)} alt={product.imageId} srcSet="" />
+                  <div className="d-block">
+                    <h3>{product.name}</h3>
+                  </div>
+                </div>
+
+              </Card>
+            </SwiperSlide>
+          ))}
+
+        </Swiper>
+      </Container>
     </>
   );
 }
