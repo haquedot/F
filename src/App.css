@@ -22,3 +22,26 @@
   color: #fff;
   background-color: #1b8057;
 }
+
+.btn_white{
+  position: relative;
+  border: none;
+  background-color: #f3f9f5;
+  color:#1b8057;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 36px;
+  line-height: 1;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn_white:hover{
+  color: #f3f9f5;
+  background-color:#1b8057;
+
+}
