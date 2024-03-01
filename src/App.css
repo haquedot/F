@@ -39,8 +39,10 @@
   line-height: 1;
   overflow: hidden;
   z-index: 1;
+  transform: perspective(1px)translateZ(0);
 }
 .btn_white:hover{
+  transition: all .21s ease-in-out;
   color: #f3f9f5;
   background-color:#1b8057;
 

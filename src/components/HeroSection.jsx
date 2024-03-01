@@ -17,7 +17,6 @@ function HeroSection() {
                                     Farm on Hand
                                 </h1>
                                 <button className='buy_btn_filled'>Shop now</button>
-
                             </div>
                         </Card>
                     </Col>
