@@ -17,7 +17,6 @@ import { Autoplay } from 'swiper/modules';
 const Slider = () => {
   return (
     <>
-      <Container fluid>
         <Swiper
           autoplay={{
             delay: 4000,
@@ -59,9 +58,7 @@ const Slider = () => {
               </Card>
             </SwiperSlide>
           ))}
-
         </Swiper>
-      </Container>
     </>
   );
 }

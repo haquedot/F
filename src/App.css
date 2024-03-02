@@ -1,3 +1,6 @@
+.logo {
+  width: 40px;
+}
 
 .custom-btn {
 
@@ -23,11 +26,11 @@
   background-color: #1b8057;
 }
 
-.btn_white{
+.btn_white {
   position: relative;
   border: none;
   background-color: #f3f9f5;
-  color:#1b8057;
+  color: #1b8057;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: .5px;
@@ -41,9 +44,24 @@
   z-index: 1;
   transform: perspective(1px)translateZ(0);
 }
-.btn_white:hover{
+
+.btn_white:hover {
   transition: all .21s ease-in-out;
   color: #f3f9f5;
-  background-color:#1b8057;
+  background-color: #1b8057;
+
+}
+
+.input_btn{
+  background-color: #f8c519;
+  color: #000;
+  border: none;
+  transform: perspective(1px)translateZ(0);
+}
+
+.input_btn:hover {
+  transition: all .21s ease-in-out;
+  color: #000;
+  background-color: #c39600;
 
 }

@@ -6,7 +6,6 @@ import "../styles/style-HeroSection.css"
 function HeroSection() {
     return (
         <>
-            <Container fluid>
                 <Row className='mb-4'>
                     <Col lg={7}>
                         <Card className='hero_card mb-4 mb-lg-0'>
@@ -53,7 +52,6 @@ function HeroSection() {
                     </Col>
 
                 </Row>
-            </Container>
         </>
     );
 }

@@ -1,15 +1,18 @@
-import CustomNavbar from './components/CustomNavbar'
-import HeroSection from './components/HeroSection'
-import Slider from './components/Slider'
+import { Container } from 'react-bootstrap'
+import CustomNavbar from './views/CustomNavbar'
+import Home from './views/Home'
+import Footer from './views/Footer'
 
 
 function App() {
 
   return (
     <>
-      <CustomNavbar />
-      <HeroSection />
-      <Slider />
+      <Container>
+        <CustomNavbar/>
+        <Home />
+      </Container>
+      <Footer />
     </>
   )
 }

@@ -7,7 +7,7 @@ import "../App.css"
 
 function CustomNavbar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary border rounded m-3">
+    <Navbar expand="lg" className="bg-body-tertiary border rounded my-3">
       <Container fluid>
         <Navbar.Brand href="#"><img src="logo.png" alt="" srcSet="" className='logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
