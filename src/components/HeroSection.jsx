@@ -23,7 +23,7 @@ function HeroSection() {
                         <Card className='hero_card'>
                             <img src="images/hero-2.jpg" alt="" srcSet="" className='w-100' />
                             <div className="hero_card_content_2">
-                                <h5>Organic Fruits</h5>
+                                <h5>Organic Vegetables</h5>
                                 <h6>100% Organic</h6>
                             </div>
                         </Card>

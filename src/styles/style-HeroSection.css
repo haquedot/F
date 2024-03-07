@@ -45,12 +45,23 @@
     overflow: hidden;
 }
 .hero_card_content_2 {
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000, 
+    3px 3px 5px rgb(75, 75, 75); 
     position: absolute;
-    top: 50%;
+    top: 40%;
     padding: 0 20px;
+}
+.hero_card_content_2 h5{
+    font-size: 26px;
+    font-family: Pacifico;
+
 }
 
 .hero_card_content_3 {
+    text-shadow: 1px 1px 1px #d4d4d4, 
+    3px 3px 5px rgb(165, 165, 165); 
+    width: 100%;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -61,10 +72,12 @@
 
 .hero_card_content_3 h5 {
     font-family: Pacifico;
+    font-size: 26px;
 
 }
 
 .buy_btn {
+    width: 60%;
     position: absolute;
     bottom: 5%;
     left: 50%;
