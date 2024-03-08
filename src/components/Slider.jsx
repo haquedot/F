@@ -50,7 +50,7 @@ const Slider = () => {
                   </div>
                   <img src={getImageUrl(product)} alt={product.imageId} srcSet="" />
                   <div className="d-block text-start mb-3">
-                    <h4>{product.price}₹</h4>
+                    <h4>₹{product.price}</h4>
                     <h6>{product.name}</h6>
                   </div>
                   <button  className='btn_white w-100'>Add to cart</button>
