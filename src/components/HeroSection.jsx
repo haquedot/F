@@ -1,6 +1,5 @@
-import Container from 'react-bootstrap/Container';
 import { Row, Col, Card } from 'react-bootstrap';
-import "../styles/style-HeroSection.css"
+import "../assets/styles/style-HeroSection.css"
 
 
 function HeroSection() {

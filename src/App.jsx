@@ -1,8 +1,9 @@
+import {Routes,Route} from 'react-router-dom'
 import { Container } from 'react-bootstrap'
-import CustomNavbar from './views/CustomNavbar'
+import CustomNavbar from './components/CustomNavbar'
 import Home from './views/Home'
-import Footer from './views/Footer'
-
+import Footer from './components/Footer'
+import ProductDetails from './views/productDetails'
 
 function App() {
 
@@ -10,7 +11,10 @@ function App() {
     <>
       <Container>
         <CustomNavbar/>
-        <Home />
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/product-details' element={<ProductDetails/>}/>
+        </Routes>
       </Container>
       <Footer />
     </>

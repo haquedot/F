@@ -1,7 +1,7 @@
 import { Col, Container, Row, Button, Form, InputGroup } from "react-bootstrap";
 
 import "../App.css"
-import "../styles/style-Footer.css"
+import "../assets/styles/style-Footer.css"
 
 
 function Footer() {

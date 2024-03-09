@@ -8,7 +8,7 @@ import { Container, Card } from 'react-bootstrap';
 // Import Swiper styles
 import 'swiper/css';
 
-import "../styles/style-Slider.css"
+import "../assets/styles/style-Slider.css"
 import "../App.css"
 
 // import required modules
