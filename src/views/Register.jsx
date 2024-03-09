@@ -43,7 +43,7 @@ function Register() {
                             />
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group controlId="validationCustomUse className='mb-3'rname">
+                        <Form.Group controlId="validationCustomUsername" className='mb-3'>
                             <Form.Label>Username</Form.Label>
                             <InputGroup hasValidation>
                                 <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
