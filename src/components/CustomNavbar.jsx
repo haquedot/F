@@ -4,12 +4,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "../assets/styles/style-Navbar.css"
 import "../App.css"
+import { Link, NavLink } from 'react-router-dom';
 
 function CustomNavbar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary border rounded my-3">
       <Container fluid>
-        <Navbar.Brand href="#"><img src="logo.png" alt="" srcSet="" className='logo'/></Navbar.Brand>
+        <Navbar.Brand href="#"><img src="logo.png" alt="" srcSet="" className='logo' /></Navbar.Brand>
         <Navbar.Toggle aria-controls="offcanvasNavbar" />
         <Navbar.Offcanvas
           id="offcanvasNavbar"
@@ -18,20 +19,19 @@ function CustomNavbar() {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel">
-              <img src="logo.png" alt="" srcSet=""  className='logo'/>
+              <img src="logo.png" alt="" srcSet="" className='logo' />
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-center flex-grow-1 pe-3">
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Shop</Nav.Link>
-              <Nav.Link href="#action2">Vendor</Nav.Link>
-              <Nav.Link href="#action2">Contact us</Nav.Link>
-              <Nav.Link href="#action2">Blog</Nav.Link>
 
+              <NavLink to="/" className="nav-link">Home</NavLink>
+              <NavLink to="/product-details" className="nav-link">Product details</NavLink>
+              <NavLink to="/contact" className="nav-link">Contact us</NavLink>
             </Nav>
-            
+            <Link to="/login">
               <button className='custom-btn'>Login</button>
+            </Link>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

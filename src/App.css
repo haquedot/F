@@ -2,6 +2,11 @@
   width: 40px;
 }
 
+.primary_color {
+  color: #1b8057;
+
+}
+
 .custom-btn {
 
   position: relative;
@@ -52,7 +57,33 @@
 
 }
 
-.input_btn{
+.btn_filled {
+  position: relative;
+  border: none;
+  background-color: #1b8057;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  line-height: 1;
+  overflow: hidden;
+  z-index: 1;
+  transform: perspective(1px)translateZ(0);
+}
+
+.btn_filled:hover {
+  transition: all .21s ease-in-out;
+  color: #fff;
+  background-color: #105338;
+
+}
+
+.input_btn {
   background-color: #f8c519;
   color: #000;
   border: none;

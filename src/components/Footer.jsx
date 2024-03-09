@@ -7,7 +7,7 @@ import "../assets/styles/style-Footer.css"
 function Footer() {
     return (
         <>
-            <div className="footer">
+            <div className="mt-3 footer">
                 <Container>
                     <Row>
                         <Col md={6} lg={3}>
