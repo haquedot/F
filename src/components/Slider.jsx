@@ -37,11 +37,11 @@ const Slider = () => {
       >
         {product.map((productItem, index) => (
           <SwiperSlide key={index}>
-            <Link to={{ pathname: `/product-details/${productItem.id}`, state: { product: productItem } }}>
+            <Link to={{ pathname: `/product-details/${productItem.id}`, state: { product: productItem } }} className='text-decoration-none'>
               <Card>
                 <div className="d-block p-3">
                   <div className="d-flex">
-                    <small className='w-50 text-start'>{productItem.type}</small>
+                    <small className='w-50 text-start text-secondary'>{productItem.type}</small>
                   </div>
                   <img src={getImageUrl(productItem)} alt={productItem.imageId} srcSet="" />
                   <div className="d-block text-start mb-3">

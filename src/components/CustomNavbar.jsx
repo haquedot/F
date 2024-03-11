@@ -26,7 +26,6 @@ function CustomNavbar() {
             <Nav className="justify-content-center flex-grow-1 pe-3">
 
               <NavLink to="/" className="nav-link">Home</NavLink>
-              <NavLink to="/product-details" className="nav-link">Product details</NavLink>
               <NavLink to="/contact" className="nav-link">Contact us</NavLink>
             </Nav>
             <Link to="/login">

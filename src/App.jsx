@@ -16,7 +16,7 @@ function App() {
         <CustomNavbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/product-details' element={<ProductDetails/>}/>
+          <Route path='/product-details/:productId' element={<ProductDetails/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/register' element={<Register/>}/>
