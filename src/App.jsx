@@ -3,10 +3,10 @@ import { Container } from 'react-bootstrap'
 import CustomNavbar from './components/CustomNavbar'
 import Home from './views/Home'
 import Footer from './components/Footer'
-import ProductDetails from './views/ProductDetails'
 import Login from './views/Login'
 import Contact from './views/Contact'
 import Register from './views/Register'
+import ProductDetails from './views/ProductDetails'
 
 function App() {
 
