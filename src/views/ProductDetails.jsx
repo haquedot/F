@@ -8,7 +8,7 @@ import "../assets/styles/style-ProductDetails.css"
 
 import { Navigation, Thumbs, FreeMode } from 'swiper/modules';
 import { Col, Form, Row } from 'react-bootstrap';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { product } from '../utils/data';
 
 export default function ProductDetails() {
@@ -18,7 +18,7 @@ export default function ProductDetails() {
 
     useEffect(() => {
 
-        // console.log(product.imageId)
+
         // Find the product by its ID
         const foundProduct = product.find(item => item.id === parseInt(productId));
         if (foundProduct) {
@@ -29,6 +29,7 @@ export default function ProductDetails() {
             console.log('Product not found');
         }
     }, [productId]); // Re-run effect when productId changes
+    console.log(productItem)
 
     return (
         <>
@@ -93,7 +94,9 @@ export default function ProductDetails() {
                                     required
                                 />
                             </div>
-                            <button type="submit" className='btn_filled'>Add to cart</button>
+                            <Link to={{ pathname: `/cart/${productItem.id}`, state: { product: productItem } }} className='text-decoration-none'>
+                                <button type="button" className='btn_filled'>Add to cart</button>
+                            </Link>
                             <hr />
 
                             <p>Category : <span className='text-secondary'>{productItem.type}</span></p>
