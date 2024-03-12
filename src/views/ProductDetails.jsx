@@ -33,21 +33,23 @@ export default function ProductDetails() {
     return (
         <>
             <Row>
-                <Col md={6}>
-                    <Swiper
-                        navigation={true}
-                        modules={[Navigation]}
-                        className="mySwiper border rounded"
-                    >
-                        {productItem && (
-                            <SwiperSlide>
-                                <img src={`./images/Featured_Product/${productItem.imageId}.png`} alt={productItem.imageId} />
-                            </SwiperSlide>
+                <Col lg={6}>
+                    <div className=" border rounded mb-3">
+                        <Swiper
+                            navigation={true}
+                            modules={[Navigation]}
+                            className="mySwiper"
+                        >
+                            {productItem && (
+                                <SwiperSlide>
+                                    <img src={`./images/Featured_Product/${productItem.imageId}.png`} alt={productItem.imageId} className='w-100' />
+                                </SwiperSlide>
 
-                        )}
-                    </Swiper>
+                            )}
+                        </Swiper>
+                    </div>
                 </Col>
-                <Col md={6}>
+                <Col lg={6}>
                     {productItem && (
                         <>
                             <h3>Whole Foods Market, Organic {productItem.name}</h3>
@@ -91,7 +93,7 @@ export default function ProductDetails() {
                                     required
                                 />
                             </div>
-                            <button  type="submit" className='btn_filled'>Add to cart</button>
+                            <button type="submit" className='btn_filled'>Add to cart</button>
                             <hr />
 
                             <p>Category : <span className='text-secondary'>{productItem.type}</span></p>
