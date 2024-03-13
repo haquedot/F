@@ -8,6 +8,7 @@ import Contact from './views/Contact'
 import Register from './views/Register'
 import ProductDetails from './views/ProductDetails'
 import Cart from './views/Cart'
+import Admin from './views/adminDashboard/Admin'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}/>
           <Route path='/register' element={<Register/>}/>
           <Route path="/cart/:productId" element={<Cart />} />
+          <Route path="/admin" element={<Admin/>} />
 
         </Routes>
       </Container>
