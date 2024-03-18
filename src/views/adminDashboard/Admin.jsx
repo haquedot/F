@@ -16,32 +16,32 @@ export default function Admin() {
       <Row>
         <Col md={3}>
           <Link to="/admin/dashboard">
-            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/dashboard' ? 'active' : ''}`}>
+            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/dashboard' ? 'activeBtn' : ''}`}>
               <i className="bi bi-person-circle me-2"></i>Dashboard
             </button>
           </Link>
           <Link to="/admin/orders">
-            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/orders' ? 'active' : ''}`}>
+            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/orders' ? 'activeBtn' : ''}`}>
               <i className="bi bi-list-check me-2"></i>Orders
             </button>
           </Link>
           <Link to="/admin/products">
-            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/products' ? 'active' : ''}`}>
+            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/products' ? 'activeBtn' : ''}`}>
               <i className="bi bi-box-fill me-2"></i>Products
             </button>
           </Link>
           <Link to="/admin/users">
-            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/users' ? 'active' : ''}`}>
+            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/users' ? 'activeBtn' : ''}`}>
               <i className="bi bi-people-fill me-2"></i>Users
             </button>
           </Link>
           <Link to="/admin/account-details">
-            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/account-details' ? 'active' : ''}`}>
+            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/account-details' ? 'activeBtn' : ''}`}>
               <i className="bi bi-person-fill-check me-2"></i>Account Details
             </button>
           </Link>
           <Link to="/admin/logout">
-            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/logout' ? 'active' : ''}`}>
+            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/logout' ? 'activeBtn' : ''}`}>
               <i className="bi bi-box-arrow-left me-2"></i>Logout
             </button>
           </Link>
