@@ -20,27 +20,27 @@ export default function AccountDetails() {
               </Form.Group>
             </Col>
             <Col md={6}>
-              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                 <Form.Label>Last name</Form.Label>
                 <Form.Control type="text" placeholder="Last name" />
               </Form.Group>
             </Col>
           </Row>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Email address" />
           </Form.Group>
 
           <h5>Password Change</h5>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput4">
             <Form.Label>Current password</Form.Label>
             <Form.Control type='password' />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput5">
             <Form.Label>New password</Form.Label>
             <Form.Control type='password' />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+          <Form.Group className="mb-3" controlId="exampleForm.ControlInput6">
             <Form.Label>Confirm new password</Form.Label>
             <Form.Control type='password' />
           </Form.Group>

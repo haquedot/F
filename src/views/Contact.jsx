@@ -19,17 +19,17 @@ export default function Contact() {
                                     </Form.Group>
                                 </Col>
                                 <Col md={6}>
-                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                                         <Form.Label>Email Address</Form.Label>
                                         <Form.Control type="email" placeholder="Email" />
                                     </Form.Group>
                                 </Col>
                             </Row>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
                                 <Form.Label>Subject</Form.Label>
                                 <Form.Control type="text" placeholder="Subject" />
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea4">
                                 <Form.Label>Message</Form.Label>
                                 <Form.Control as="textarea" placeholder="Message" rows={3} />
                             </Form.Group>
