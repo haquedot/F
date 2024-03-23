@@ -11,6 +11,9 @@ import Cart from './views/Cart'
 import Admin from './views/adminDashboard/Admin'
 import Contact from './views/Contact'
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
 
   return (
@@ -29,6 +32,7 @@ function App() {
         </Routes>
       </Container>
       <Footer />
+      <ToastContainer />
     </>
   )
 }

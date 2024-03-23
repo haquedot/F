@@ -2,21 +2,48 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import {toast} from 'react-toastify';
 
 import "../App.css"
 import "../assets/styles/style-Login.css"
+import axios from 'axios';
 function Register() {
+    const [userDetails,setUserDetails]=useState({
+        firstname:'',
+        lastname:'',
+        username:'',
+        password:'',
+        phone:'',
+        email:'',
+
+    })
     const [validated, setValidated] = useState(false);
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async(event) => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
         }
-
         setValidated(true);
+        event.preventDefault();
+        try{
+            const response=await axios.post('http://localhost:8000/user-Register',userDetails);
+            console.log(response);
+            if(response.status==201){
+                toast.success('register successfully!!');
+            }
+        }catch(error){
+            console.log("error in register:",error);
+            toast.error('Register failed!!');
+        }
     };
+    
+
+    const handleInputChange=(e)=>{
+        setUserDetails({...userDetails,[e.target.name]:e.target.value})
+        
+    }
 
     return (
         <>
@@ -31,6 +58,9 @@ function Register() {
                                 required
                                 type="text"
                                 placeholder="First name"
+                                name='firstname'
+                                onChange={handleInputChange}
+                                value={userDetails.firstname}
                             />
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
@@ -40,6 +70,9 @@ function Register() {
                                 required
                                 type="text"
                                 placeholder="Last name"
+                                name='lastname'
+                                onChange={handleInputChange}
+                                value={userDetails.lastname}
                             />
                             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
                         </Form.Group>
@@ -51,6 +84,9 @@ function Register() {
                                     type="text"
                                     placeholder="Username"
                                     aria-describedby="inputGroupPrepend"
+                                    name='username'
+                                    onChange={handleInputChange}
+                                    value={userDetails.username}
                                     required
                                 />
                                 <Form.Control.Feedback type="invalid">
@@ -59,26 +95,48 @@ function Register() {
                             </InputGroup>
                         </Form.Group>
                         <Form.Group controlId="validationCustom03" className='mb-3'>
-                            <Form.Label>City</Form.Label>
-                            <Form.Control type="text" placeholder="City" required />
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="password"
+                                name='password' 
+                                onChange={handleInputChange} 
+                                value={userDetails.password}
+                                required
+                            />
                             <Form.Control.Feedback type="invalid">
-                                Please provide a valid city.
+                                Please provide a valid password.
+                            </Form.Control.Feedback>
+                        </Form.Group>
+                        <Form.Group controlId="validationCustom03" className='mb-3'>
+                            <Form.Label>Email</Form.Label>
+                            <Form.Control 
+                                type="email" 
+                                placeholder="hibbanrahmanhyt@gmail.com" 
+                                name='email'
+                                onChange={handleInputChange}
+                                value={userDetails.email}
+                                required 
+                            />
+                            <Form.Control.Feedback type="invalid">
+                                Please provide a valid email.
                             </Form.Control.Feedback>
                         </Form.Group>
                         <Form.Group controlId="validationCustom04" className='mb-3'>
-                            <Form.Label>State</Form.Label>
-                            <Form.Control type="text" placeholder="State" required />
+                            <Form.Label>Phone number</Form.Label>
+                            <Form.Control 
+                                type="text" 
+                                placeholder="+91-9973152523" 
+                                name='phone'
+                                onChange={handleInputChange}
+                                value={userDetails.phone}
+                                required 
+                            />
                             <Form.Control.Feedback type="invalid">
-                                Please provide a valid state.
+                                Please provide a valid phone number.
                             </Form.Control.Feedback>
                         </Form.Group>
-                        <Form.Group controlId="validationCustom05" className='mb-3'>
-                            <Form.Label>Zip</Form.Label>
-                            <Form.Control type="text" placeholder="Zip" required />
-                            <Form.Control.Feedback type="invalid">
-                                Please provide a valid zip.
-                            </Form.Control.Feedback>
-                        </Form.Group>
+                        
                         <Form.Group className="mb-3">
                             <Form.Check
                                 required
