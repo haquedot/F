@@ -10,9 +10,9 @@ import ProductDetails from './views/ProductDetails'
 import Cart from './views/Cart'
 import Admin from './views/adminDashboard/Admin'
 import Contact from './views/Contact'
-
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import User from './views/userDashboard/User'
 
 function App() {
 
@@ -28,6 +28,7 @@ function App() {
           <Route path='/register' element={<Register/>}/>
           <Route path="/cart/:productId" element={<Cart />} />
           <Route path="/admin/*" element={<Admin/>} />
+          <Route path="/user/*" element={<User/>} />
 
         </Routes>
       </Container>
