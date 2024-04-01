@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import Cookies from "js-cookie";
+import VARIABLES from "../../environmentVariables";
 function Login() {
   const [validated, setValidated] = useState(false);
   const [userData, setUserData] = useState({
@@ -19,7 +20,7 @@ function Login() {
     } else {
       try {
         const response = await axios.post(
-          "http://localhost:8000/user-Login",
+          `${VARIABLES.API_URL_REMOTE}/user-Login`,
           userData
         );
         if (response.status === 200) {

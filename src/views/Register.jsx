@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, Form, InputGroup } from "react-bootstrap";
 import { toast } from "react-toastify";
 import axios from "axios";
-
+import VARIABLES from "../../environmentVariables";
 function Register() {
   const [userDetails, setUserDetails] = useState({
     firstname: "",
@@ -24,7 +24,7 @@ function Register() {
     } else {
       try {
         const response = await axios.post(
-          "http://localhost:8000/user-Register",
+          `${VARIABLES.API_URL_REMOTE}/user-Register`,
           userDetails
         );
         console.log(response);
