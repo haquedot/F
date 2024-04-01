@@ -7,10 +7,17 @@ import Orders from './Orders';
 import Products from './Products';
 import Users from './Users';
 import AccountDetails from './AcountDetails';
-
+import Cookies from 'js-cookie';
+import {toast} from 'react-toastify'
 export default function Admin() {
   const location = useLocation();
-
+  const handleLogout = () => {
+    Cookies.remove("token");
+   toast.success("logout successfully");
+   setTimeout(() => {
+     window.location.href = "/";
+   }, 1000);
+ };
   return (
     <>
       <Row>
@@ -41,7 +48,7 @@ export default function Admin() {
             </button>
           </Link>
           <Link to="/admin/logout">
-            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/logout' ? 'activeBtn' : ''}`}>
+            <button onClick={handleLogout} className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/admin/logout' ? 'activeBtn' : ''}`}>
               <i className="bi bi-box-arrow-left me-2"></i>Logout
             </button>
           </Link>
