@@ -6,11 +6,18 @@ import Dashboard from './Dashboard';
 import Orders from './Orders';
 import AccountDetails from './AcountDetails';
 import Address from './Address';
-
+import Cookies from 'js-cookie';
+import {toast} from 'react-toastify'
 
 export default function User() {
   const location = useLocation();
-
+  const handleLogout = () => {
+     Cookies.remove("token");
+    toast.success("logout successfully");
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 1000);
+  };
   return (
     <>
       <Row>
@@ -37,8 +44,8 @@ export default function User() {
             </button>
           </Link>
           
-          <Link to="/user/logout">
-            <button className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/user/logout' ? 'activeBtn' : ''}`}>
+          <Link to="#">
+            <button onClick={handleLogout} className={`admin_btn w-100 py-3 px-3 mb-2 ${location.pathname === '/user/logout' ? 'activeBtn' : ''}`}>
               <i className="bi bi-box-arrow-left me-2"></i>Logout
             </button>
           </Link>
