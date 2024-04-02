@@ -55,13 +55,26 @@ function CustomNavbar() {
               </NavLink>
             </Nav>
             {isUser ? (
-              <Link className="text-black m-0 p-0 ms-3 me-2" to={profileLink}>
-                <i className="bi bi-person-circle fs-2"></i>
-              </Link>
+              <>
+                <div className="d-flex align-items-center">
+                  <Link to="/wishlist">
+                    <i className="bi bi-heart me-2 fs-3 primary_color"></i>
+                  </Link>
+                  <Link to="/cart">
+                    <i className="bi bi-cart me-2 fs-3 primary_color"></i>
+                  </Link>
+                </div>
+                <Link className="text-black m-0 p-0 me-2" to={profileLink}>
+                  <i className="bi bi-person-circle fs-3 primary_color"></i>
+                </Link>
+              </>
             ) : (
-              <Link to="/login">
-                <button className="custom-btn">Login</button>
-              </Link>
+              <>
+
+                <Link to="/login">
+                  <button className="custom-btn">Login</button>
+                </Link>
+              </>
             )}
           </Offcanvas.Body>
         </Navbar.Offcanvas>
