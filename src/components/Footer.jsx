@@ -39,7 +39,9 @@ function Footer() {
                                 <li>
                                     Dairy
                                 </li>
-
+                                <Link to='/contact' className="text-white text-decoration-none">
+                                        Contact
+                                    </Link>
                             </ul>
                         </Col>
                         <Col md={6} lg={3}>
