@@ -5,7 +5,7 @@ import { getImageUrl } from "../utils/utils"
 function Deals() {
     return (
         <>
-            <div className="d-block border border-3 border-danger rounded-3 p-3 my-3">
+            <div className="d-block bg-body-secondary border border-3 border-danger rounded-3 p-3 my-3">
                 <h3 className="mb-3">Deal Of The Week</h3>
 
                 <Row>
