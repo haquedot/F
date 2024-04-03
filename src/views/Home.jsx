@@ -5,6 +5,7 @@ import TopSeller from "../components/TopSeller";
 import banner_1 from '../assets/images/banner_1.svg'
 import Deals from "../components/Deals";
 import Cards from "../components/Cards";
+import TrendingProducts from "../components/TrendingProducts";
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <TopSeller/>
             <Deals/>
             <Cards/>
+            <TrendingProducts/>
         </>
     )
 }
