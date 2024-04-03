@@ -4,6 +4,7 @@ import card_2 from '../assets/images/card_2.jpg';
 import card_3 from '../assets/images/card_3.jpg';
 import '../assets/styles/style-Cards.css';
 import '../App.css'
+import { Link } from "react-router-dom";
 
 
 function Cards() {
@@ -16,7 +17,9 @@ function Cards() {
                             <div className="d-block">
                                 <h3>Fresh Root Veges</h3>
                                 <p className="fw-bolder">Only <br /><h2 className="fw-bold">₹12</h2></p>
-                                <button className="btn_filled">Shop now</button>
+                                <Link to='/vegetables' className="text-decoration-none">
+                                    <button className="btn_filled">Shop now</button>
+                                </Link>
                             </div>
                         </div>
                     </Card>
@@ -29,7 +32,9 @@ function Cards() {
                                 <h3>Organic Fruits</h3>
                                 <p className="text-danger">100% Organic</p>
                                 <p className="fw-bolder">Only <br /><h2 className="fw-bold">₹12</h2></p>
-                                <button className="btn_filled">Shop now</button>
+                                <Link to='/fruits' className="text-decoration-none">
+                                    <button className="btn_filled">Shop now</button>
+                                </Link>
                             </div>
                         </div>
                     </Card>
@@ -43,8 +48,9 @@ function Cards() {
                                 <p className="text-white">100% Organic</p>
                                 <p className="fw-bolder"><h2 className="fw-bold">Only ₹12</h2></p>
 
-                                <button className="btn_filled">Shop now</button>
-
+                                <Link to='/vegetables' className="text-decoration-none">
+                                    <button className="btn_filled">Shop now</button>
+                                </Link>
                             </div>
                         </div>
                     </Card>

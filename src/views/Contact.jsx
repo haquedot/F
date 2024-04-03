@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Form } from 'react-bootstrap';
+import '../App.css'
 
 export default function Contact() {
 
@@ -33,6 +34,7 @@ export default function Contact() {
                                 <Form.Label>Message</Form.Label>
                                 <Form.Control as="textarea" placeholder="Message" rows={3} />
                             </Form.Group>
+                            <button className='btn_filled'>Submit</button>
                         </Form>
                     </div>
                 </Col>
