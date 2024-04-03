@@ -49,6 +49,9 @@ function CustomNavbar() {
               <NavLink to="/" className="nav-link">
                 Home
               </NavLink>
+              <NavLink to="/vegetables" className="nav-link">
+                Vegetables
+              </NavLink>
               <NavLink to="/contact" className="nav-link">
                 Contact us
               </NavLink>
