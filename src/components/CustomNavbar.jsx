@@ -16,8 +16,6 @@ function CustomNavbar() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    console.log("isUser", isUser);
-    console.log("token", token);
     if (token) {
       let jwt = decode(token);
       setIsUser(true);
@@ -25,7 +23,7 @@ function CustomNavbar() {
     } else {
       setIsUser(false);
     }
-  });
+  }, []);
 
   return (
     <Navbar expand="lg" className="bg-body-tertiary border rounded my-3">
@@ -75,7 +73,6 @@ function CustomNavbar() {
               </>
             ) : (
               <>
-
                 <Link to="/login">
                   <button className="custom-btn">Login</button>
                 </Link>
