@@ -5,7 +5,6 @@ import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import Dashboard from './Dashboard';
 import Orders from './Orders';
 import Products from './Products';
-import Users from './Users';
 import AccountDetails from './AcountDetails';
 import Cookies from 'js-cookie';
 import {toast} from 'react-toastify'
